@@ -36,3 +36,15 @@ AUTHENTICATION_BACKENDS = [
 
 
 ```
+
+or in Django templates
+
+```djangotemplate
+
+{% if my_instance in perms.myapp.view_myobject %}
+
+...
+
+{% endif %}
+
+```
